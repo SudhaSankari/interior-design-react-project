@@ -1,0 +1,207 @@
+@font-face {
+  font-family: Comforter Brush;
+  src: url(./assets/font/ComforterBrush-Regular.ttf);
+}
+@font-face {
+  font-family: Alger;
+  src: url(./assets/font/ALGER.TTF);
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+}
+img{
+  max-width: 100%;
+}
+.fluid{
+  background-color: #048276;
+  padding:40px 80px;
+  width:100%;
+}
+.box{
+  background-color: rgb(209 237 177);
+  padding:25px;
+  width:100%;
+  text-align: center;
+}
+.menu{
+  text-align: right;
+}
+.menu,.content,.last{
+  display:flex;
+  flex-wrap: wrap;
+}
+.menu  .menu1{
+  width:30%;
+}
+.menu  .menu2{
+  width:70%;
+}
+.menu1 h1{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Comforter Brush;
+  color:rgb(220 26 92);
+  box-shadow: 10px 7px 13px 6px red;
+}
+.menu2 > div {
+  display:inline-block;
+  padding:5px;
+  margin:5px;
+  color:white;
+  background-color: #a0ef00;
+}
+.Heading{
+  font-size: xx-large;
+  font-family: Alger;
+  text-align: center;
+  color:#f50557;
+}
+.Heading p{
+  text-shadow: 6px 0px 7px red;
+}
+.BigImage{
+ width:100%;
+ padding: 10px;
+}
+.row1{
+display:flex;
+flex-wrap:wrap;
+margin-top:10px;
+}
+.row1 div{
+  width:33.3333333%;
+  padding:10px;
+}
+.row1 div > h2{
+  background-color: #038579;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding:10px;
+}
+.row1 div > p{
+background-color: #038579;
+  margin-top: -6px;
+  padding:15px;
+  color:white;
+}
+.content div{
+  width:33.3333333%;
+  padding:10px;
+}
+.content div > p{
+  text-align: justify;
+  height: 80%;
+}
+.content div > h2{
+  background-color:   #038579;
+  margin-top: 20px;
+  margin-bottom: 0;  
+  padding:10px;
+}
+.content div > p{
+  padding:15px;
+  margin-top: 0;
+}
+li{
+  list-style: none;
+}
+.last div{
+  width:50%;
+  padding:10px;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+.child1 p,.child2 h1,.child3 p,.child4 h1{
+  margin:0;
+  padding: 5px;
+}
+.child2 h1,.child4 h1{
+  color:#a0ef00;
+}
+.child1 p,.child3 p{
+color: white;
+display: flex;
+flex-wrap: wrap;
+height: 150px;
+font-size: xx-large;
+justify-content: center;
+align-items: center;
+}
+.child2 ul > li,.child4 ul > li{
+color: white;
+padding:2px;
+}
+.div1 , .div2{
+  display: flex;
+ flex-wrap: wrap;
+ margin-top: 20px;
+}
+.div1 .child1 ,.div2 .child3{
+           width:20%;
+          background-color: #a0ef00;
+}
+.div1 .child2 , .div2 .child4{
+          width:80%;
+          background-color: #048276;
+}
+.end div{
+  display:inline-block;
+  padding: 10px;margin-top: 20px;
+}
+@media (max-width:768px){
+.menu > .menu1,.menu > .menu2{
+  width:50%;
+}
+.row1 > div, .content > div,.last > .div1, .last > .div2, .end > div{
+  width:100%;
+}
+}
+@media (max-width:576px){
+.fluid{
+  padding:15px 30px;
+}
+.menu > .menu1,.menu > .menu2,.row1 > div, .content > div,.last > .div1, .last > .div2, .end > div{
+  width:100%;
+  padding:5px;
+}
+.menu > .menu2{
+  padding:10px;
+}
+.menu2{
+  text-align: center;
+}
+.box{
+  padding:10px;
+}
+.content div > h2{
+  padding:5px;
+}
+.row1 div > h2 {
+  padding:5px;
+}
+.row1 div > p {
+  padding:10px;
+}
+.content div > p {
+  padding:5px;
+}
+.content div > p {
+  margin-top: 10px;
+}
+.child2 ul > li, .child4 ul > li {
+  padding:0;
+}
+.child1 p{
+  height: 200px;
+}
+
+.close{
+  margin-bottom: 10px;
+}
+}
